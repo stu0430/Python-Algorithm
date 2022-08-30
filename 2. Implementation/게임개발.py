@@ -51,7 +51,7 @@ while True:
         if lst[nx][ny] == 0:
             x = nx
             y = ny
-            # 뒤가 바다로 막혀있는 경우
+        # 뒤가 바다로 막혀있는 경우
         else:
             break
         turn_time = 0
