@@ -12,7 +12,7 @@
 
 - 선입후출(First In Last Out) 구조 or 후입선출(Last In First Out) 구조
 
-```
+```python
 stack = []
 
 stack.append(5)
@@ -32,7 +32,7 @@ print(stack[::-1]) # 최상단 원소부터 출력 [1, 3, 2, 5]
 
 - 선입선출(First In First Out) 구조
 
-```
+```python
 from collections import deque
 
 # 큐 구현을 위해 deque 라이브러리 사용
@@ -56,7 +56,7 @@ print(queue) # 나중에 들어온 원소부터 출력 deque([4, 1, 7, 3])
 
 - `재귀 함수` : 자기 자신을 다시 호출하는 함수
 
-```
+```python
 def recursive_function():
     print('재귀 함수를 호출합니다.')
     recursive_function()
@@ -67,7 +67,7 @@ recursive_function()
 - 재귀 함수가 언제 끝날지, **종료 조건**을 꼭 명시
 - 재귀 함수는 내부적으로 스택 자료구조와 동일
 
-```
+```python
 # 반복적으로 구현한 n!
 def factorial_iterative(n):
    result = 1
@@ -98,7 +98,7 @@ print('재귀적으로 구현:', factorial_recursive(5)) # 120
 
   - `인접 행렬` : 2차원 배열로 그래프의 연결 관계를 표현하는 방식
 
-  ```
+  ```python
   INF = 999999999 # 무한의 비용 (연결 되어 있지 않은 노드) 선언
 
   # 2차원 리스트를 이용해 인접 행렬 표현
@@ -113,7 +113,7 @@ print('재귀적으로 구현:', factorial_recursive(5)) # 120
 
   - `인접 리스트` : 리스트로 그래프의 연결 관계를 표현하는 방식
 
-  ```
+  ```python
   # 행(Row)이 3개인 2차원 리스트로 인접 리스트 표현
   graph = [[] for _ in range(3)]
 
@@ -149,7 +149,7 @@ print('재귀적으로 구현:', factorial_recursive(5)) # 120
 
 - 데이터의 개수가 N개인 경우 O(N)의 시간 소요
 
-```
+```python
 # DFS 메서드 정의
 def dfs(graph, v, visited):
     # 현재 노드를 방문 처리
@@ -192,7 +192,7 @@ dfs(graph, 1, visited)
 - O(N)의 시간 소요
 - 일반적인 경우 실제 수행 시간은 `DFS`보다 좋은 편
 
-```
+```python
 from collections import deque
 
 # BFS 메서드 정의
